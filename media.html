@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Haven Grill Meze Mangal - Mediterranean Cuisine</title>
+<meta name="description" content="Haven Grill Meze Mangal is an independent, family-owned restaurant serving the best Mediterranean cuisine. We take pride in offering our customers a variety of flavours from around the region.">
+<meta name="keywords" content="Haven Grill Meze Mangal, Mediterranean Cuisine, Mediterranean Food, Mediterranean Restaurant">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="7 days">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .menu li {
+            float: left;
+        }
+
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu li a:hover {
+            background-color: #111;
+        }
+
+        .banner {
+            margin: -10;
+            padding: 40px 0px;
+            margin-bottom: 30px;
+            width: 100%;
+            background-image: url("https://lh3.googleusercontent.com/p/AF1QipOW4KS740IkkwTmz2fSsuzetKxKGmzTudabqslF=s1360-w1360-h1020");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0px -500px;
+        }
+
+        .content {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .left {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .right {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .center {
+        text-align: center;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #333;
+            color: white;
+        }
+        
+        .opening-times {
+  width: 400px;
+  margin: 0 auto;
+        
+}
+
+.opening-times h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.opening-times ul {
+  list-style: none;
+  padding: 0;
+}
+
+.opening-times li {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+        
+        
+              .team-member {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+      }
+
+      .team-member img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+      }
+
+      .team-member h3 {
+        margin: 0;
+        padding: 0;
+      }
+
+      .team-member p {
+        margin: 0;
+        padding: 0;
+      }
+        
+          .slideshow {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+  }
+
+  .slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    opacity: 0;
+    width: 600px;
+    height: 400px;
+    transition: opacity 4s;
+  }
+
+  .slideshow img.active {
+    z-index: 10;
+    opacity: 1;
+  }
+
+  .slideshow img.last-active {
+    z-index: 9;
+  }
+
+        
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li><a href="">Haven Grill</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="media.html">Photos</a></li>
+    </ul>
+
+    <div class="banner"><br><br><br><br><br><br></div>
+    <div class="content">
+    
+        <div class="center">
+            <h2>Haven Grill</h2>
+            <p>Photowall</p>
+            
+        </div> 
+    </div>
+   <div class="center">
+       
+       <div class="slideshow">
+  <img src="https://lh3.googleusercontent.com/p/AF1QipPY7-tIcghewg8P1Znm_vUGfkxJh-MJEHp95rVy=s1360-w1360-h1020" class="active" />
+  <img src="https://img1.wsimg.com/isteam/ip/3a639b94-da0d-4bd6-a5ca-c234c66781fe/_DSC1531%20copy.jpg" />
+  <img src="https://lh3.googleusercontent.com/p/AF1QipO1UwU6oMB5U0RXIJNntBmDOLthTC5FtVU516S1=s1360-w1360-h1020" />
+  <img src="https://lh3.googleusercontent.com/p/AF1QipOW4KS740IkkwTmz2fSsuzetKxKGmzTudabqslF=s1360-w1360-h1020" />
+</div>
+
+<script>
+  let i = 0;
+  let images = document.querySelectorAll('.slideshow img');
+  let time = 6000;
+  
+  function changeImage(){
+    images[i].classList.remove('active');
+    images[i].classList.add('last-active');
+  
+    i++;
+  
+    if(i >= images.length){
+      i = 0;
+    }
+  
+    images[i].classList.add('active');
+  
+    setTimeout(changeImage, time);
+  }
+  
+  setTimeout(changeImage, time);
+</script>
+    
+    </div>
+  
+ 
+
+    <div class="footer">
+        <p>Email: info@havengrill.co.uk | Phone: 0203 627 2368</p>
+    </div>
+
+</body>
+
+</html>
